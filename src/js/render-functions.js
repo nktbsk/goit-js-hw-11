@@ -12,14 +12,14 @@ export function renderGallery(images) {
       }) => {
         return `
         <li class="gallery-item">
-          <a href="${largeImageURL}">
-            <img src="${webformatURL}" alt="${tags}" loading="lazy" />
+          <a class="a-img" href="${largeImageURL}">
+            <img class="gallery-img" src="${webformatURL}" alt="${tags}" loading="lazy" />
           </a>
           <div class="info">
-            <p>Likes: ${likes}</p>
-            <p>Views: ${views}</p>
-            <p>Comments: ${comments}</p>
-            <p>Downloads: ${downloads}</p>
+            <p class="p-likes" >Likes ${likes}</p>
+            <p class="p-views" >Views ${views}</p>
+            <p class="p-comments" >Comments ${comments}</p>
+            <p class="p-downloads" >Downloads ${downloads}</p>
           </div>
         </li>`;
       }
